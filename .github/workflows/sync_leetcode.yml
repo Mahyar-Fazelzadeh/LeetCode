@@ -8,20 +8,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read, write
-      issues: read, write
-      repository-projects: read, write
-      actions: read, write
-      checks: read, write
-      deployments: read, write
-      id-token: read, write
-      discussions: read, write
-      packages: read, write
-      pages: read, write
-      pull-requests: read, write
-      security-events: read, write
-      statuses: read, write
+    permissions: read-all|write-all
+#       contents: read, write
+#       issues: read, write
+#       repository-projects: read, write
+#       actions: read, write
+#       checks: read, write
+#       deployments: read, write
+#       id-token: read, write
+#       discussions: read, write
+#       packages: read, write
+#       pages: read, write
+#       pull-requests: read, write
+#       security-events: read, write
+#       statuses: read, write
       # Add or modify other permissions as needed
 
     steps:
