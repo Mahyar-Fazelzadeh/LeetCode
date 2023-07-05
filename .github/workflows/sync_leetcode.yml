@@ -5,11 +5,14 @@ on:
   schedule:
     - cron: "0 8 * * 6"
 
-permissions: read-all|write-all
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      repository-projects: write
+      # Add or modify other permissions as needed
 
     steps:
       - name: Sync
