@@ -3,28 +3,13 @@ name: Sync Leetcode
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 8 * * 6"
+    - cron: "0 23 * * *"
 
 permissions: write-all
 
 jobs:
   build:
     runs-on: ubuntu-latest
-#     permissions: read-all|write-all
-#       contents: read, write
-#       issues: read, write
-#       repository-projects: read, write
-#       actions: read, write
-#       checks: read, write
-#       deployments: read, write
-#       id-token: read, write
-#       discussions: read, write
-#       packages: read, write
-#       pages: read, write
-#       pull-requests: read, write
-#       security-events: read, write
-#       statuses: read, write
-      # Add or modify other permissions as needed
 
     steps:
       - name: Sync
